@@ -3,6 +3,7 @@ param location string = resourceGroup().location
 param tags object = {}
 param keyVaultName string
 param connStrKeyName string
+@secure()
 param passwordKeyName string
 param primaryKeyKeyName string
 @allowed([
