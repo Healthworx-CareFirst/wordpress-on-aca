@@ -102,6 +102,7 @@ module main 'resources.bicep' = {
 }
 
 //  Deployment Telemetry
+/*
 @description('Enable usage and telemetry feedback to Microsoft.')
 param enableTelemetry bool = true
 var telemetryId = '69ef933a-eff0-450b-8a46-331cf62e160f-wordpress-${location}'
@@ -117,6 +118,7 @@ resource telemetrydeployment 'Microsoft.Resources/deployments@2021-04-01' = if (
     }
   }
 }
+*/
 
 //  Outputs
 output AZURE_RESOURCE_GROUP string = rg.name
